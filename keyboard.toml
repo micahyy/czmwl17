@@ -58,8 +58,8 @@ my_paste = "WM(V, LCtrl)"
 
 [light]
 # All light pins are high-active by default, uncomment if you want it to be low-active
-capslock.pin = "P1_11"
-capslock.low_active = false
+# capslock.pin = "P1_11"
+# capslock.low_active = false
 # scrolllock.pin = "PA3"
 # scrolllock.low_active = true
 # Just ignore if no light pin is used for it
