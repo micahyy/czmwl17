@@ -66,9 +66,15 @@ my_paste = "WM(V, LCtrl)"
 # numslock.low_active = false #BUG,按下时灯亮，松开后灯灭；正常状态应该按下后常亮啊？？》？
 
 # 蓝牙连接状态指示灯
-ble_led.pin = "P1_11"      # 请替换为你实际想用的、空闲的GPIO引脚，例如 P1_11
-ble.low_active = false # 默认高电平点亮，如果LED是低电平有效则设为 true
-
+# ble_led.pin = "P1_11"      # 请替换为你实际想用的、空闲的GPIO引脚，例如 P1_11
+# ble.low_active = false # 默认高电平点亮，如果LED是低电平有效则设为 true
+rgb.enabled = true
+rgb.pin = "P0_03"          # 【关键】请替换为您的RGB数据线实际连接的GPIO引脚
+rgb.num_leds = 17          # 【关键】您提到有17颗轴灯，必须设置为17
+rgb.channel = 0            # PWM通道，对于nRF52840通常为0
+rgb.rgbw = false           # WS2812是RGB灯，不是RGBW灯，设为false
+rgb.brightness = 50        # 初始亮度百分比，可设为0-100，为避免太刺眼，建议从50开始
+rgb.speed = 1              # 部分灯效的速度，保持默认1即可
 
 [storage]
 # Storage feature is enabled by default
