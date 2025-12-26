@@ -31,7 +31,7 @@ matrix_map = """
 [[layer]]
 name = "base_layer"
 keys = """
-NumLock RgbTog KpAsterisk KpMinus
+NumLock KpSlash KpAsterisk KpMinus
 Kp7     Kp8     Kp9        KpPlus
 Kp4     Kp5     Kp6
 Kp1     Kp2     Kp3        Enter
