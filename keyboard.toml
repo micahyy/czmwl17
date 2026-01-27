@@ -39,7 +39,7 @@ encoders = [["AudioVolUp", "AudioVolDown"]]
 [[layer]]
 name = "second_layer"
 keys = """
-No  No       WM(W,LShift)        OUT_BLE
+No  No       WM(W,LShift)        OUT_BT
 DF(0)  LT(1, Space) LM(0, LShift | RGui) 
 OSL(0) OSM(LAlt)    TH(Kp1, Kp2)        SHIFTED(Kp2)
     @my_copy        @my_paste
@@ -82,10 +82,10 @@ adc_divider_measured = 1000 # 测量电阻值(kΩ)
 adc_divider_total = 2000  # 总电阻值(kΩ)
 
 
-# [Deprecated] Pin that reads battery's charging state, `low-active` means the battery is charging when `charge_state.pin` is low 充电的时候1.13引脚指示灯会亮？
-charge_state = { pin = "P1_13", low_active = true }
-# [Deprecated] Output LED pin that blinks when the battery is low 是不是0.28pin低电量会闪烁？
-charge_led= { pin = "P0_28", low_active = true }
+# [Deprecated] Pin that reads battery's charging state, `low-active` means the battery is charging when `charge_state.pin` is low 
+charge_state = { pin = "P1_13", low_active = true }  #4056Chrg pin to P1_13
+# [Deprecated] Output LED pin that blinks when the battery is low 
+charge_led= { pin = "P0_28", low_active = true } #P0_28接指示灯，充电时P0_28高电平
 
 # 可选：设置蓝牙发射功率（0-8，默认4）
 default_tx_power = 4
