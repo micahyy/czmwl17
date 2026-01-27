@@ -78,8 +78,8 @@ clear_storage = true
 [ble]
 enabled = true
 battery_adc_pin = "P0_04"
-adc_divider_measured = 50
-adc_divider_total = 100
+adc_divider_measured = 1000 # 测量电阻值(kΩ)
+adc_divider_total = 2000  # 总电阻值(kΩ)
 
 
 # [Deprecated] Pin that reads battery's charging state, `low-active` means the battery is charging when `charge_state.pin` is low 充电的时候1.13引脚指示灯会亮？
