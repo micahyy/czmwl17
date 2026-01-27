@@ -68,6 +68,7 @@ my_paste = "WM(V, LCtrl)"
 # 这是我们要用来显示蓝牙状态的 LED
 # numslock.pin = "P1_11"
 # numslock.low_active = false 
+ble = { pin = "P0_28" }
 
 # ==================== 关键修改：移除 indicators 字段 ====================
 [storage]
