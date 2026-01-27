@@ -89,7 +89,7 @@ enabled = true
 battery_adc_pin = "P0_04"
 adc_divider_measured = 1000 # 测量电阻值(kΩ)
 adc_divider_total = 2000  # 总电阻值(kΩ)
-idle_timeout = "5min"
+idle_interval = "5min"
 
 # [Deprecated] Pin that reads battery's charging state, `low-active` means the battery is charging when `charge_state.pin` is low 
 charge_state = { pin = "P1_13", low_active = true }  #4056Chrg pin to P1_13
