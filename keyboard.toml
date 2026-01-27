@@ -39,7 +39,7 @@ encoders = [["AudioVolUp", "AudioVolDown"]]
 [[layer]]
 name = "second_layer"
 keys = """
-No  No       WM(W,LShift)         No
+No  No       WM(W,LShift)        OUT_BLE
 DF(0)  LT(1, Space) LM(0, LShift | RGui) 
 OSL(0) OSM(LAlt)    TH(Kp1, Kp2)        SHIFTED(Kp2)
     @my_copy        @my_paste
@@ -68,7 +68,7 @@ my_paste = "WM(V, LCtrl)"
 # 这是我们要用来显示蓝牙状态的 LED
 # numslock.pin = "P1_11"
 # numslock.low_active = false 
-ble.pin = "P1_11"
+# ble.pin = "P1_11"
 
 # ==================== 关键修改：移除 indicators 字段 ====================
 [storage]
